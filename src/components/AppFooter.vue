@@ -33,13 +33,13 @@ export default {
                                 <!-- Banner Image -->
                                 <img src="../assets/buy-comics-merchandise.png" alt="">
                                 <!-- Banner Text -->
-                                <span>DIGITAL COMICS</span>
+                                <span>DC MERCHANDISE</span>
                             </div>
                             <div class="banner-col">
                                 <!-- Banner Image -->
                                 <img src="../assets/buy-comics-subscriptions.png" alt="">
                                 <!-- Banner Text -->
-                                <span>DIGITAL COMICS</span>
+                                <span>SUBSCRIPTION</span>
                             </div>
                             <div class="banner-col">
                                 <!-- Banner Image -->

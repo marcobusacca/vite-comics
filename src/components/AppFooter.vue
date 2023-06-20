@@ -151,6 +151,15 @@ footer {
                     span {
                         cursor: pointer;
                     }
+
+                    img:hover {
+                        filter: invert(100%);
+                    }
+
+                    span:hover {
+                        color: black;
+                        font-weight: 700;
+                    }
                 }
 
                 .menu-col {

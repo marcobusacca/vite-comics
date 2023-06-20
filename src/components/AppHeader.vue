@@ -82,7 +82,7 @@ export default {
                 <!-- Header Logo Col -->
                 <div class="col">
                     <!-- Header Logo -->
-                    <img src="../assets/dc-logo.png" alt="">
+                    <img src="../assets/dc-logo.png" alt="dc-header-logo">
                 </div>
                 <!-- Header Menu Col -->
                 <div class="col">

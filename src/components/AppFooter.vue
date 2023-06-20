@@ -16,44 +16,42 @@ export default {
         <div class="container-fluid banner-container">
             <!-- Footer Banner Container -->
             <div class="container">
-                <!-- Footer Banner Row -->
+                <!-- Banner Row -->
                 <div class="row">
-                    <!-- Footer Banner Col -->
-                    <div class="col">
-                        <!-- Banner Sub Row -->
-                        <div class="row">
-                            <!-- Banner Sub Col -->
-                            <div class="banner-col">
-                                <!-- Banner Image -->
-                                <img src="../assets/buy-comics-digital-comics.png" alt="">
-                                <!-- Banner Text -->
-                                <span>DIGITAL COMICS</span>
-                            </div>
-                            <div class="banner-col">
-                                <!-- Banner Image -->
-                                <img src="../assets/buy-comics-merchandise.png" alt="">
-                                <!-- Banner Text -->
-                                <span>DC MERCHANDISE</span>
-                            </div>
-                            <div class="banner-col">
-                                <!-- Banner Image -->
-                                <img src="../assets/buy-comics-subscriptions.png" alt="">
-                                <!-- Banner Text -->
-                                <span>SUBSCRIPTION</span>
-                            </div>
-                            <div class="banner-col">
-                                <!-- Banner Image -->
-                                <img src="../assets/buy-comics-shop-locator.png" alt="">
-                                <!-- Banner Text -->
-                                <span>COMICS SHOP LOCATOR</span>
-                            </div>
-                            <div class="banner-col">
-                                <!-- Banner Image -->
-                                <img src="../assets/buy-dc-power-visa.svg" alt="">
-                                <!-- Banner Text -->
-                                <span>DC POWER VISA</span>
-                            </div>
-                        </div>
+                    <!-- Banner Col -->
+                    <div class="banner-col">
+                        <!-- Banner Image -->
+                        <img src="../assets/buy-comics-digital-comics.png" alt="banner-image-1">
+                        <!-- Banner Text -->
+                        <span>DIGITAL COMICS</span>
+                    </div>
+                    <!-- Banner Col -->
+                    <div class="banner-col">
+                        <!-- Banner Image -->
+                        <img src="../assets/buy-comics-merchandise.png" alt="banner-image-2">
+                        <!-- Banner Text -->
+                        <span>DC MERCHANDISE</span>
+                    </div>
+                    <!-- Banner Col -->
+                    <div class="banner-col">
+                        <!-- Banner Image -->
+                        <img src="../assets/buy-comics-subscriptions.png" alt="banner-image-3">
+                        <!-- Banner Text -->
+                        <span>SUBSCRIPTION</span>
+                    </div>
+                    <!-- Banner Col -->
+                    <div class="banner-col">
+                        <!-- Banner Image -->
+                        <img src="../assets/buy-comics-shop-locator.png" alt="banner-image-4">
+                        <!-- Banner Text -->
+                        <span>COMICS SHOP LOCATOR</span>
+                    </div>
+                    <!-- Banner Col -->
+                    <div class="banner-col">
+                        <!-- Banner Image -->
+                        <img src="../assets/buy-dc-power-visa.svg" alt="banner-image-5">
+                        <!-- Banner Text -->
+                        <span>DC POWER VISA</span>
                     </div>
                 </div>
             </div>
@@ -69,9 +67,118 @@ export default {
                         <!-- Menu Sub Row -->
                         <div class="row">
                             <!-- Menu Sub Col -->
-                            <div class="menu-col"></div>
-                            <div class="menu-col"></div>
-                            <div class="menu-col"></div>
+                            <div class="menu-col">
+                                <!-- List Title -->
+                                <h3>DC COMICS</h3>
+                                <!-- Menu List -->
+                                <ul>
+                                    <li>
+                                        <a href="#">Characters</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Comics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Movies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">TV</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Games</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Videos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">News</a>
+                                    </li>
+                                </ul>
+                                <!-- List Title -->
+                                <h3>SHOP</h3>
+                                <!-- Menu List -->
+                                <ul>
+                                    <li>
+                                        <a href="#">Shop DC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Shop DC Collectibles</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-col">
+                                <!-- List Title -->
+                                <h3>DC</h3>
+                                <!-- Menu List -->
+                                <ul>
+                                    <li>
+                                        <a href="#">Terms Of Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy policy (New)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ad Choices</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Advertising</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Subscriptions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Talent Workshops</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CPSC Certificates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ratings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Shop Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-col">
+                                <!-- List Title -->
+                                <h3>SITES</h3>
+                                <!-- Menu List -->
+                                <ul>
+                                    <li>
+                                        <a href="#">DC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">MAD Magazine</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DC Kids</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DC Universe</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DC Power Visa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Background Logo Col -->
+                    <div class="col">
+                        <!-- Background Logo Sub Row -->
+                        <div class="row">
+                            <!-- Background Logo Sub Col -->
+                            <div class="background-logo-sub-col">
+                                <!-- Background Logo -->
+                                <img src="../assets/dc-logo-bg.png" alt="dc-background-logo">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,17 +188,11 @@ export default {
         <div class="container-fluid bottom-bar-container">
             <!-- Footer Bottom Bar Container -->
             <div class="container">
-                <!-- Footer Bottom Bar Row -->
+                <!-- Bottom Bar Row -->
                 <div class="row">
-                    <!-- Footer Bottom Bar Col -->
-                    <div class="col">
-                        <!-- Bottom Bar Sub Row -->
-                        <div class="row">
-                            <!-- Bottom Bar Sub Col -->
-                            <div class="bottom-bar-col"></div>
-                            <div class="bottom-bar-col"></div>
-                        </div>
-                    </div>
+                    <!-- Bottom Bar Col -->
+                    <div class="bottom-bar-col"></div>
+                    <div class="bottom-bar-col"></div>
                 </div>
             </div>
         </div>
@@ -104,13 +205,12 @@ export default {
 
 footer {
     width: 100%;
-    height: calc(100% - 320px);
+    height: calc(100vh - 270px);
     background-color: blue;
     color: $primaryColor;
 
     .container-fluid {
         width: 100%;
-        height: calc(100% / 3);
         padding: 10px 20px;
 
         .container {
@@ -121,13 +221,12 @@ footer {
             .row {
                 width: 100%;
                 height: 100%;
+                padding: 10px;
                 display: flex;
                 flex-wrap: wrap;
 
                 .col {
-                    width: 100%;
-                    height: 100%;
-                    padding: 10px;
+                    width: calc(100% / 2);
                 }
 
                 .banner-col {
@@ -163,9 +262,34 @@ footer {
                 }
 
                 .menu-col {
-                    width: calc(100% / 3);
                     height: 100%;
-                    border: 1px solid #fff;
+                    margin: 0px 25px;
+
+                    h3 {
+                        margin: 15px 0px;
+                    }
+
+                    li {
+                        color: #959595;
+                        padding: 5px 0px;
+
+                        a:hover {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+
+                .background-logo-sub-col {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        position: absolute;
+                    }
                 }
 
                 .bottom-bar-col {
@@ -178,14 +302,19 @@ footer {
     }
 
     .banner-container {
+        height: 160px;
         background-color: #0282F9;
     }
 
     .menu-container {
+        height: calc(100% - 260px);
         background-image: url(../assets/footer-bg.jpg);
+        background-size: cover;
+        overflow-y: hidden;
     }
 
     .bottom-bar-container {
+        height: 100px;
         background-color: #303030;
     }
 }

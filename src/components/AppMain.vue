@@ -28,7 +28,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 main {
-    height: 200px;
+    height: 150px;
     background-color: #1C1C1C;
     color: $primaryColor;
 

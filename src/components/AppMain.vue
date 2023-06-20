@@ -11,11 +11,18 @@ export default {
 
 <!-- TEMPLATE HTML -->
 <template lang="">
-  <div>
     <main>
+        <!-- Main Content -->
+        <h1> --> Content goes here &lt;--</h1>
     </main>
-  </div>
 </template>
 
 <!-- STYLE SCSS -->
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+main {
+    height: 200px;
+    background-color: black;
+    color: #fff;
+    padding: 50px;
+}
+</style>

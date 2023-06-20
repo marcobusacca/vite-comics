@@ -64,7 +64,7 @@ export default {
             this.menuItem[index].active = true;
         },
 
-        // FUNZIONE CHE DISATTIVA L'ELEMENTO DEL MENU QUANDO L'UTENTE VA TOGLIE IL CURSORE DEL MOUSE
+        // FUNZIONE CHE DISATTIVA L'ELEMENTO DEL MENU QUANDO L'UTENTE TOGLIE IL CURSORE DEL MOUSE
         inActiveMenuItem(index) {
             this.menuItem[index].active = false;
         }

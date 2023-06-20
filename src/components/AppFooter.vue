@@ -77,7 +77,7 @@ export default {
 <style lang="scss" scoped>
 footer {
     width: 100%;
-    height: calc(100% - 350px);
+    height: calc(100% - 320px);
     background-color: blue;
 
     .container-fluid {

@@ -89,7 +89,7 @@ footer {
 
         .container {
             background-color: red;
-            max-width: 1800px;
+            max-width: 1600px;
             margin: 0 auto;
             height: 100%;
 

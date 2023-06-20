@@ -94,9 +94,10 @@ footer {
             height: 100%;
 
             .row {
+                width: 100%;
+                height: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                height: 100%;
 
                 .col {
                     width: 100%;

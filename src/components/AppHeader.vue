@@ -109,9 +109,10 @@ header {
         height: 100%;
 
         .row {
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: space-between;
-            height: 100%;
 
             .col {
                 height: 100%;

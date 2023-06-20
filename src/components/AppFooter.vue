@@ -191,8 +191,35 @@ export default {
                 <!-- Bottom Bar Row -->
                 <div class="row">
                     <!-- Bottom Bar Col -->
-                    <div class="bottom-bar-col"></div>
-                    <div class="bottom-bar-col"></div>
+                    <div class="bottom-bar-col">
+                        <!-- Bottom Bar Sign Up Button -->
+                        <a href="#" class="btn-sign-up">SIGN-UP NOW!</a>
+                    </div>
+                    <!-- Bottom Bar Col -->
+                    <div class="bottom-bar-col">
+                        <!-- Bottom Bar Follow Us -->
+                        <h4>FOLLOW US</h4>
+                        <!-- Facebook Link -->
+                        <a href="#">
+                            <img src="../assets/footer-facebook.png" alt="facebook-icon">
+                        </a>
+                        <!-- Twitter Link -->
+                        <a href="#">
+                            <img src="../assets/footer-twitter.png" alt="twitter-icon">
+                        </a>
+                        <!-- YouTube Link -->
+                        <a href="#">
+                            <img src="../assets/footer-youtube.png" alt="youtube-icon">
+                        </a>
+                        <!-- Pinterest Link -->
+                        <a href="#">
+                            <img src="../assets/footer-pinterest.png" alt="pinterest-icon">
+                        </a>
+                        <!-- Periscope Link -->
+                        <a href="#">
+                            <img src="../assets/footer-periscope.png" alt="periscope-icon">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,9 +320,41 @@ footer {
                 }
 
                 .bottom-bar-col {
-                    width: calc(100% / 2);
+                    width: calc(100% / 2 - 50px);
+                    margin: 0 25px;
                     height: 100%;
-                    border: 1px solid #fff;
+                    display: flex;
+                    align-items: center;
+
+                    .btn-sign-up {
+                        font-weight: 700;
+                        border: 4px solid $secondaryColor;
+                        padding: 15px 10px;
+                        transition: all 1s;
+                    }
+
+                    .btn-sign-up:hover {
+                        background-color: #fff;
+                        color: black;
+                    }
+                }
+
+                .bottom-bar-col:last-child {
+                    justify-content: flex-end;
+
+                    h4 {
+                        margin: 0 20px;
+                        font-size: 17px;
+                        color: $secondaryColor;
+                    }
+
+                    a {
+                        padding: 0px 10px;
+                    }
+
+                    a:hover img {
+                        filter: brightness(1000%);
+                    }
                 }
             }
         }

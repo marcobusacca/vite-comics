@@ -8,7 +8,9 @@ export default {
 <!-- TEMPLATE HTML -->
 <template lang="">
   <div>
-
+    <header>
+        
+    </header>
   </div>
 </template>
 

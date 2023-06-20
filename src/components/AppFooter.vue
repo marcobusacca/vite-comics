@@ -290,7 +290,7 @@ footer {
 
                 .menu-col {
                     height: 100%;
-                    margin: 0px 25px;
+                    margin-right: 50px;
 
                     h3 {
                         margin: 15px 0px;
@@ -321,7 +321,6 @@ footer {
 
                 .bottom-bar-col {
                     width: calc(100% / 2 - 50px);
-                    margin: 0 25px;
                     height: 100%;
                     display: flex;
                     align-items: center;

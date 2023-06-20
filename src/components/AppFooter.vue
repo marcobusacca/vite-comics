@@ -23,11 +23,36 @@ export default {
                         <!-- Banner Sub Row -->
                         <div class="row">
                             <!-- Banner Sub Col -->
-                            <div class="banner-col"></div>
-                            <div class="banner-col"></div>
-                            <div class="banner-col"></div>
-                            <div class="banner-col"></div>
-                            <div class="banner-col"></div>
+                            <div class="banner-col">
+                                <!-- Banner Image -->
+                                <img src="../assets/buy-comics-digital-comics.png" alt="">
+                                <!-- Banner Text -->
+                                <span>DIGITAL COMICS</span>
+                            </div>
+                            <div class="banner-col">
+                                <!-- Banner Image -->
+                                <img src="../assets/buy-comics-merchandise.png" alt="">
+                                <!-- Banner Text -->
+                                <span>DIGITAL COMICS</span>
+                            </div>
+                            <div class="banner-col">
+                                <!-- Banner Image -->
+                                <img src="../assets/buy-comics-subscriptions.png" alt="">
+                                <!-- Banner Text -->
+                                <span>DIGITAL COMICS</span>
+                            </div>
+                            <div class="banner-col">
+                                <!-- Banner Image -->
+                                <img src="../assets/buy-comics-shop-locator.png" alt="">
+                                <!-- Banner Text -->
+                                <span>COMICS SHOP LOCATOR</span>
+                            </div>
+                            <div class="banner-col">
+                                <!-- Banner Image -->
+                                <img src="../assets/buy-dc-power-visa.svg" alt="">
+                                <!-- Banner Text -->
+                                <span>DC POWER VISA</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -75,20 +100,20 @@ export default {
 
 <!-- STYLE SCSS -->
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 footer {
     width: 100%;
     height: calc(100% - 320px);
     background-color: blue;
+    color: $primaryColor;
 
     .container-fluid {
         width: 100%;
         height: calc(100% / 3);
         padding: 10px 20px;
-        background-color: yellow;
-        border: 1px solid black;
 
         .container {
-            background-color: red;
             max-width: 1600px;
             margin: 0 auto;
             height: 100%;
@@ -102,14 +127,30 @@ footer {
                 .col {
                     width: 100%;
                     height: 100%;
-                    border: 2px dashed black;
                     padding: 10px;
                 }
 
                 .banner-col {
-                    width: calc(100% / 5);
+                    width: calc(100% / 5 - 40px);
+                    margin: 0 20px;
                     height: 100%;
-                    border: 1px solid #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 20%;
+                    }
+
+                    span {
+                        margin-left: 20px;
+                        font-size: 15px;
+                    }
+
+                    img,
+                    span {
+                        cursor: pointer;
+                    }
                 }
 
                 .menu-col {

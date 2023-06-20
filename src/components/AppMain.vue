@@ -25,10 +25,12 @@ export default {
 
 <!-- STYLE SCSS -->
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 main {
     height: 200px;
     background-color: #1C1C1C;
-    color: #fff;
+    color: $primaryColor;
 
     .container {
         max-width: 1600px;

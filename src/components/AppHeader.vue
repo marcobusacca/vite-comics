@@ -100,6 +100,8 @@ export default {
 
 <!-- STYLE SCSS -->
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 header {
     height: 120px;
 

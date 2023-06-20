@@ -1,7 +1,11 @@
 <!-- SCRIPT VUE.JS -->
 <script>
 export default {
+    data() {
+        return {
 
+        }
+    },
 }
 </script>
 
@@ -9,7 +13,6 @@ export default {
 <template lang="">
   <div>
     <header>
-        
     </header>
   </div>
 </template>

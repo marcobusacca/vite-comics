@@ -10,22 +10,25 @@ import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
-  // DICHIARO APP_HEADER
-  AppHeader,
+  // COMPONENTI
+  components: {
+    // DICHIARO APP_HEADER
+    AppHeader,
 
-  // DICHIARO APP_MAIN
-  AppMain,
+    // DICHIARO APP_MAIN
+    AppMain,
 
-  // DICHIARO APP_FOOTER
-  AppFooter,
+    // DICHIARO APP_FOOTER
+    AppFooter,
+  }
 }
 </script>
 
 <!-- TEMPLATE HTML -->
 <template lang="">
-    <AppHeader/>
-    <AppMain/>
-    <AppFooter/>
+  <AppHeader/>
+  <AppMain/>
+  <AppFooter/>
 </template>
 
 <!-- STYLE SCSS -->

@@ -198,12 +198,10 @@ export default {
 
 footer {
     width: 100%;
-    height: calc(100vh - 270px);
     background-color: blue;
     color: $primaryColor;
 
     .container-fluid {
-        width: 100%;
         padding: 10px 20px;
 
         .row {
@@ -237,6 +235,7 @@ footer {
                 align-items: center;
                 position: relative;
                 width: 100%;
+                padding-top: 100px;
 
                 img {
                     position: absolute;
@@ -285,15 +284,18 @@ footer {
     }
 
     .menu-container {
-        height: calc(100% - 260px);
         background-image: url(../assets/footer-bg.jpg);
         background-size: cover;
         overflow-y: hidden;
+        padding-bottom: 150px;
     }
 
     .bottom-bar-container {
-        height: 100px;
         background-color: #303030;
+
+        .row {
+            align-items: center;
+        }
     }
 }
 </style>

@@ -32,7 +32,7 @@ export default {
 
 <!-- TEMPLATE HTML -->
 <template lang="">
-    <!-- Footer Banner -->
+    <!-- Footer Banner Container Fluid -->
     <div class="container-fluid banner-container">
         <!-- Footer Banner Container -->
         <div class="container">
@@ -88,7 +88,14 @@ export default {
 }
 
 .banner-container {
-    height: 160px;
     background-color: $secondaryColor;
+
+    .container {
+        padding: 40px 0;
+
+        .row {
+            align-items: center;
+        }
+    }
 }
 </style>

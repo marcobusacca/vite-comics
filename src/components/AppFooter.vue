@@ -1,62 +1,21 @@
 <!-- SCRIPT VUE.JS -->
 <script>
+// IMPORTO APP_FOOTER_BANNER
+import AppFooterBanner from './AppFooterBanner.vue';
 export default {
-    data() {
-        return {
-
-        }
-    },
+    components: {
+        // DICHIARO APP_FOOTER_BANNER
+        AppFooterBanner
+    }
 }
 </script>
 
 <!-- TEMPLATE HTML -->
 <template lang="">
     <footer>
-        <!-- Footer Banner Container Fluid -->
-        <div class="container-fluid banner-container">
-            <!-- Footer Banner Container -->
-            <div class="container">
-                <!-- Banner Row -->
-                <div class="row">
-                    <!-- Banner Col -->
-                    <div class="banner-col">
-                        <!-- Banner Image -->
-                        <img src="../assets/buy-comics-digital-comics.png" alt="banner-image-1">
-                        <!-- Banner Text -->
-                        <span>DIGITAL COMICS</span>
-                    </div>
-                    <!-- Banner Col -->
-                    <div class="banner-col">
-                        <!-- Banner Image -->
-                        <img src="../assets/buy-comics-merchandise.png" alt="banner-image-2">
-                        <!-- Banner Text -->
-                        <span>DC MERCHANDISE</span>
-                    </div>
-                    <!-- Banner Col -->
-                    <div class="banner-col">
-                        <!-- Banner Image -->
-                        <img src="../assets/buy-comics-subscriptions.png" alt="banner-image-3">
-                        <!-- Banner Text -->
-                        <span>SUBSCRIPTION</span>
-                    </div>
-                    <!-- Banner Col -->
-                    <div class="banner-col">
-                        <!-- Banner Image -->
-                        <img src="../assets/buy-comics-shop-locator.png" alt="banner-image-4">
-                        <!-- Banner Text -->
-                        <span>COMICS SHOP LOCATOR</span>
-                    </div>
-                    <!-- Banner Col -->
-                    <div class="banner-col">
-                        <!-- Banner Image -->
-                        <img src="../assets/buy-dc-power-visa.svg" alt="banner-image-5">
-                        <!-- Banner Text -->
-                        <span>DC POWER VISA</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Menu Container Fluid -->
+        <!-- Footer Banner -->
+        <AppFooterBanner/>
+        <!-- Footer Menu -->
         <div class="container-fluid menu-container">
             <!-- Footer Menu Container -->
             <div class="container">
@@ -184,7 +143,7 @@ export default {
                 </div>
             </div>
         </div>
-        <!-- Footer Bottom Bar Container Fluid -->
+        <!-- Footer Bottom Bar -->
         <div class="container-fluid bottom-bar-container">
             <!-- Footer Bottom Bar Container -->
             <div class="container">
@@ -228,6 +187,7 @@ export default {
 
 <!-- STYLE SCSS -->
 <style lang="scss" scoped>
+// IMPORTO IL FILE _VARIABLES.SCSS
 @use '../styles/partials/variables' as *;
 
 footer {
@@ -245,38 +205,6 @@ footer {
 
             .col {
                 width: calc(100% / 2);
-            }
-
-            .banner-col {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: calc(100% / 5 - 40px);
-                margin: 0 20px;
-                height: 100%;
-
-                img {
-                    width: 20%;
-
-                    &:hover {
-                        filter: invert(100%);
-                    }
-                }
-
-                span {
-                    margin-left: 20px;
-                    font-size: 15px;
-
-                    &:hover {
-                        color: black;
-                        font-weight: 700;
-                    }
-                }
-
-                img,
-                span {
-                    cursor: pointer;
-                }
             }
 
             .menu-col {
@@ -348,11 +276,6 @@ footer {
                 }
             }
         }
-    }
-
-    .banner-container {
-        height: 160px;
-        background-color: #0282F9;
     }
 
     .menu-container {

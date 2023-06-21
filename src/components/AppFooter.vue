@@ -257,25 +257,25 @@ footer {
 
                 img {
                     width: 20%;
+
+                    &:hover {
+                        filter: invert(100%);
+                    }
                 }
 
                 span {
                     margin-left: 20px;
                     font-size: 15px;
+
+                    &:hover {
+                        color: black;
+                        font-weight: 700;
+                    }
                 }
 
                 img,
                 span {
                     cursor: pointer;
-                }
-
-                img:hover {
-                    filter: invert(100%);
-                }
-
-                span:hover {
-                    color: black;
-                    font-weight: 700;
                 }
             }
 
@@ -321,12 +321,13 @@ footer {
                     font-weight: 700;
                     border: 4px solid $secondaryColor;
                     transition: all 1s;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: black;
+                    }
                 }
 
-                .btn-sign-up:hover {
-                    background-color: #fff;
-                    color: black;
-                }
             }
 
             .bottom-bar-col:last-child {
@@ -340,10 +341,10 @@ footer {
 
                 a {
                     padding: 0px 10px;
-                }
 
-                a:hover img {
-                    filter: brightness(1000%);
+                    &:hover img {
+                        filter: brightness(1000%);
+                    }
                 }
             }
         }

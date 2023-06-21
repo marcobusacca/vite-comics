@@ -105,48 +105,39 @@ export default {
 header {
     height: 120px;
 
-    .container {
-        max-width: 1600px;
-        margin: 0 auto;
-        height: 100%;
+    .row {
+        justify-content: space-between;
 
-        .row {
-            width: 100%;
-            height: 100%;
+        .col {
             display: flex;
-            justify-content: space-between;
+            align-items: center;
+            height: 100%;
 
-            .col {
-                height: 100%;
+            img {
+                width: 80%;
+                cursor: pointer;
+            }
+
+            ul {
                 display: flex;
                 align-items: center;
+                height: 100%;
+            }
 
-                img {
-                    width: 80%;
-                    cursor: pointer;
-                }
+            li {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding: 15px;
+                font-size: 14px;
+                font-weight: 700;
+                border-bottom: 5px solid transparent;
+                cursor: pointer;
+            }
 
-                ul {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                }
-
-                li {
-                    display: flex;
-                    align-items: center;
-                    height: 100%;
-                    font-size: 14px;
-                    font-weight: 700;
-                    padding: 15px;
-                    border-bottom: 5px solid transparent;
-                    cursor: pointer;
-                }
-
-                .active {
-                    color: #0282F9;
-                    border-bottom-color: #0282F9;
-                }
+            .active {
+                color: #0282F9;
+                border-bottom-color: #0282F9;
             }
         }
     }

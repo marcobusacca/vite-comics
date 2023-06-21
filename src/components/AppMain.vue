@@ -32,17 +32,8 @@ main {
     background-color: #1C1C1C;
     color: $primaryColor;
 
-    .container {
-        max-width: 1600px;
-        margin: 0 auto;
-        height: 100%;
-
-        .row {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
+    .row {
+        align-items: center;
     }
 }
 </style>

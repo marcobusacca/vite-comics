@@ -2,16 +2,11 @@
 <script>
 // IMPORTO APP_FOOTER_BANNER
 import AppFooterBanner from './AppFooterBanner.vue';
+
 export default {
     components: {
         // DICHIARO APP_FOOTER_BANNER
         AppFooterBanner
-    },
-
-    data() {
-        return {
-
-        }
     },
 }
 </script>

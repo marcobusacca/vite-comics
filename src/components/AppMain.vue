@@ -1,6 +1,12 @@
 <!-- SCRIPT VUE.JS -->
 <script>
+// IMPORTO APP_MAIN_CARD
+import AppMainCard from './AppMainCard.vue';
 export default {
+    components: {
+        // DICHIARO APP_MAIN_CARD
+        AppMainCard
+    },
     data() {
         return {
             cardItem: [
@@ -103,16 +109,7 @@ export default {
         <div class="container">
             <!-- Main Content Row -->
             <div class="row">
-                <!-- Main Content Col -->
-                <div class="card-col" v-for="(card, index) in cardItem" :key="index">
-                    <!-- Card Image -->
-                    <div class="card-image" :style="`background-image: url('${card.thumb}')`">
-                    </div>
-                    <!-- Card Text -->
-                    <div class="card-text">
-                        <h3 v-text="card.series.toUpperCase()"></h3>
-                    </div>
-                </div>
+                <AppMainCard  v-for="(card, index) in cardItem" :key="index" :thumb="card.thumb" :series="card.series"/>
                 <!-- Main Load Button Col -->
                 <div class="load-col">
                     <a href="">LOAD MORE</a>
@@ -152,32 +149,6 @@ main {
         .row {
             justify-content: center;
             flex-wrap: wrap;
-
-            .card-col {
-                width: calc(100% / 6 - 40px);
-                margin: 20px;
-
-                .card-image {
-                    width: 235px;
-                    height: 235px;
-                    background-size: cover;
-                    cursor: pointer;
-
-                    &:hover {
-                        border: 4px solid $secondaryColor;
-                    }
-                }
-
-                .card-text {
-                    font-size: 13px;
-                    padding: 20px 0;
-                    cursor: pointer;
-
-                    h3:hover {
-                        text-shadow: 0 0 10px $secondaryColor;
-                    }
-                }
-            }
 
             .load-col {
                 margin-top: 50px;

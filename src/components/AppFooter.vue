@@ -6,7 +6,13 @@ export default {
     components: {
         // DICHIARO APP_FOOTER_BANNER
         AppFooterBanner
-    }
+    },
+
+    data() {
+        return {
+
+        }
+    },
 }
 </script>
 

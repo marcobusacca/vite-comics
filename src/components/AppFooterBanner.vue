@@ -1,7 +1,32 @@
 <!-- SCRIPT VUE.JS -->
 <script>
 export default {
-
+    data() {
+        return {
+            bannerItem: [
+                {
+                    label: 'DIGITAL COMICS',
+                    src: '/src/assets/buy-comics-digital-comics.png',
+                },
+                {
+                    label: 'DC MERCHANDISE',
+                    src: '/src/assets/buy-comics-merchandise.png',
+                },
+                {
+                    label: 'SUBSCRIPTION',
+                    src: '/src/assets/buy-comics-subscriptions.png',
+                },
+                {
+                    label: 'COMICS SHOP LOCATOR',
+                    src: '/src/assets/buy-comics-shop-locator.png',
+                },
+                {
+                    label: 'DC POWER VISA',
+                    src: '/src/assets/buy-dc-power-visa.svg',
+                },
+            ]
+        }
+    },
 }
 </script>
 
@@ -14,39 +39,11 @@ export default {
             <!-- Banner Row -->
             <div class="row">
                 <!-- Banner Col -->
-                <div class="banner-col">
+                <div class="banner-col" v-for="(item, index) in bannerItem" :key="index">
                     <!-- Banner Image -->
-                    <img src="../assets/buy-comics-digital-comics.png" alt="banner-image-1">
+                    <img :src="item.src" :alt="`banner-image-${index+1}`">
                     <!-- Banner Text -->
-                    <span>DIGITAL COMICS</span>
-                </div>
-                <!-- Banner Col -->
-                <div class="banner-col">
-                    <!-- Banner Image -->
-                    <img src="../assets/buy-comics-merchandise.png" alt="banner-image-2">
-                    <!-- Banner Text -->
-                    <span>DC MERCHANDISE</span>
-                </div>
-                <!-- Banner Col -->
-                <div class="banner-col">
-                    <!-- Banner Image -->
-                    <img src="../assets/buy-comics-subscriptions.png" alt="banner-image-3">
-                    <!-- Banner Text -->
-                    <span>SUBSCRIPTION</span>
-                </div>
-                <!-- Banner Col -->
-                <div class="banner-col">
-                    <!-- Banner Image -->
-                    <img src="../assets/buy-comics-shop-locator.png" alt="banner-image-4">
-                    <!-- Banner Text -->
-                    <span>COMICS SHOP LOCATOR</span>
-                </div>
-                <!-- Banner Col -->
-                <div class="banner-col">
-                    <!-- Banner Image -->
-                    <img src="../assets/buy-dc-power-visa.svg" alt="banner-image-5">
-                    <!-- Banner Text -->
-                    <span>DC POWER VISA</span>
+                    <span v-text="item.label"></span>
                 </div>
             </div>
         </div>

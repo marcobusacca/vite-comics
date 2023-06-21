@@ -85,14 +85,26 @@ export default {
 <!-- TEMPLATE HTML -->
 <template lang="">
     <main>
+        <!-- Jumbotron Container Fluid -->
+        <div class="container-fluid jumbotron-container">
         <!-- Jumbotron Container -->
-        <div class="container-fluid jumbotron-container"></div>
+            <div class="container">
+                <!-- Jumbotron Row -->
+                <div class="jumbotron-row">
+                    <!-- Jumbotron Col -->
+                    <div class="jumbotron-col">
+                        <!-- Jumbtron Label -->
+                        <h1>CURRENT SERIES</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Main Content Card Container -->
         <div class="container">
             <!-- Main Content Row -->
             <div class="row">
                 <!-- Main Content Col -->
-                <div class="col" v-for="(card, index) in cardItem" :key="index">
+                <div class="card-col" v-for="(card, index) in cardItem" :key="index">
                     <!-- Card Image -->
                     <div class="card-image" :style="`background-image: url('${card.thumb}')`">
                     </div>
@@ -100,6 +112,10 @@ export default {
                     <div class="card-text">
                         <h3 v-text="card.series.toUpperCase()"></h3>
                     </div>
+                </div>
+                <!-- Main Load Button Col -->
+                <div class="load-col">
+                    <a href="">LOAD MORE</a>
                 </div>
             </div>
         </div>
@@ -116,18 +132,28 @@ main {
     color: $primaryColor;
 
     .jumbotron-container {
-        height: 450px;
+        height: 45vh;
         background-image: url(../assets/jumbotron.jpg);
         background-size: cover;
+        position: relative;
+
+        h1 {
+            padding: 15px 30px;
+            font-size: 25px;
+            background-color: $secondaryColor;
+            position: absolute;
+            bottom: -30px;
+        }
     }
 
     .container {
         padding: 50px 0;
 
         .row {
+            justify-content: center;
             flex-wrap: wrap;
 
-            .col {
+            .card-col {
                 width: calc(100% / 6 - 40px);
                 margin: 20px;
 
@@ -145,6 +171,21 @@ main {
                 .card-text {
                     font-size: 13px;
                     padding: 20px 0;
+                    cursor: pointer;
+
+                    h3:hover {
+                        text-shadow: 0 0 10px $secondaryColor;
+                    }
+                }
+            }
+
+            .load-col {
+                margin-top: 50px;
+
+                a {
+                    padding: 12px 65px;
+                    font-weight: 700;
+                    background-color: $secondaryColor;
                 }
             }
         }

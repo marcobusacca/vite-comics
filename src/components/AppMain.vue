@@ -138,8 +138,7 @@ main {
                     cursor: pointer;
 
                     &:hover {
-                        filter: brightness(40%);
-                        border: 3px solid $secondaryColor;
+                        border: 4px solid $secondaryColor;
                     }
                 }
 
